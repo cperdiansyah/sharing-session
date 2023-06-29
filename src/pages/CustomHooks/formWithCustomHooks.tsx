@@ -25,7 +25,7 @@ export const MyForm: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit} style={formStyle}>
-      <label>
+      <label className="mb-2">
         Name:
         <input
           type="text"
@@ -35,7 +35,7 @@ export const MyForm: React.FC = () => {
         />
       </label>
 
-      <label>
+      <label className="mb-2">
         Email:
         <input
           type="email"
@@ -45,7 +45,12 @@ export const MyForm: React.FC = () => {
         />
       </label>
 
-      <button type="submit">Submit</button>
+      <button
+        type="submit"
+        className="border border-white transition duration-300 ease-in-out hover:border-blue-300"
+      >
+        Submit
+      </button>
     </form>
   )
 }
@@ -69,7 +74,7 @@ export const MyFormRegis: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit} style={formStyle}>
-      <label>
+      <label className="mb-2">
         Name:
         <input
           type="text"
@@ -79,7 +84,7 @@ export const MyFormRegis: React.FC = () => {
         />
       </label>
 
-      <label>
+      <label className="mb-2">
         Email:
         <input
           type="email"
@@ -88,7 +93,7 @@ export const MyFormRegis: React.FC = () => {
           onChange={handleChange}
         />
       </label>
-      <label>
+      <label className="mb-2">
         Password:
         <input
           type="password"
@@ -98,7 +103,12 @@ export const MyFormRegis: React.FC = () => {
         />
       </label>
 
-      <button type="submit">Submit</button>
+      <button
+        type="submit"
+        className="border border-white transition duration-300 ease-in-out hover:border-blue-300"
+      >
+        Submit
+      </button>
     </form>
   )
 }

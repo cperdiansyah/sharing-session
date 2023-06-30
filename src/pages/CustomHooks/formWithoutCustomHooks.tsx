@@ -52,5 +52,63 @@ const MyForm: React.FC = () => {
     </form>
   )
 }
+const MyFormRegis: React.FC = () => {
+  const initialValues: FormValues = {
+    name: '',
+    email: '',
+    password: ''
+  }
+
+  const [values, setValues] = useState<FormValues>(initialValues)
+
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target
+    setValues((prevValues) => ({
+      ...prevValues,
+      [name]: value,
+    }))
+  }
+
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    console.log('Submitted values:', values)
+    // Perform further actions with the submitted form values
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        Name:
+        <input
+          type="text"
+          name="name"
+          value={values.name}
+          onChange={handleChange}
+        />
+      </label>
+
+      <label>
+        Email:
+        <input
+          type="email"
+          name="email"
+          value={values.email}
+          onChange={handleChange}
+        />
+      </label>
+      <label>
+        Password:
+        <input
+          type="password"
+          name="password"
+          value={values.password}
+          onChange={handleChange}
+        />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  )
+}
 
 export default MyForm

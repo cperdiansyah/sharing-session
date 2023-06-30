@@ -5,6 +5,7 @@ export const Header = () => {
     <div className="nav-link flex w-[100vh] justify-evenly mb-10 ">
       <NavLink to="/">Home</NavLink>
       <NavLink to="/custom-hooks">Custom Hooks</NavLink>
+      <NavLink to="/cleanup-useEffect">Clean Up UseEffect</NavLink>
     </div>
   )
 }

@@ -4,8 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './pages/Home/App'
 import CustomHooks from './pages/CustomHooks'
 import Layout from './pages/components/Layout'
-// import './assets/index.css'
 import './assets/tailwind.css'
+import CleanupuseEffect from './pages/CleanupuseEffect'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: '/custom-hooks',
         element: <CustomHooks />,
+      },
+      {
+        path: '/cleanup-useEffect',
+        element: <CleanupuseEffect />,
       },
     ],
   },

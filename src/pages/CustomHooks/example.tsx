@@ -7,9 +7,9 @@ interface IData {
   body: string
 }
 
-const fetchData = async () => {
+const fetchData = async (endpoint:string) => {
   try {
-    const response = await axios.get('https://api.example.com/data')
+    const response = await axios.get(endpoint)
     return response
   } catch (error) {
     console.log('Error:', error)

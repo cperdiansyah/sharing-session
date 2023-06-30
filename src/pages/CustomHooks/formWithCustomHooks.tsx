@@ -97,7 +97,7 @@ export const MyFormRegis: React.FC = () => {
         Password:
         <input
           type="password"
-          name="email"
+          name="password"
           value={values.password}
           onChange={handleChange}
         />

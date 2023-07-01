@@ -1,1 +1,1 @@
-export const { VITE_MOVIE_API } = import.meta.env
+export const { VITE_BASE_URL } = import.meta.env

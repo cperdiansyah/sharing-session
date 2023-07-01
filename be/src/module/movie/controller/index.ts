@@ -15,7 +15,10 @@ export const getNowplayingMovie = async (
     let response = await api.get(
       `/3/movie/now_playing?language=en-US&page=${page}`
     )
-    return res.status(200).json(response)
+    // return res.status(200).json(response.data)
+    setTimeout(() => {
+      return res.status(200).json(response.data)
+    }, 5000)
   } catch (error) {
     return res.status(500).json(error)
   }
@@ -34,7 +37,10 @@ export const getPopularMovie = async (
     const page = req.query.page || 1
 
     let response = await api.get(`/3/movie/popular?language=en-US&page=${page}`)
-    return res.status(200).json(response.data)
+    // return res.status(200).json(response.data)
+    setTimeout(() => {
+      return res.status(200).json(response.data)
+    }, 5000)
   } catch (error) {
     console.log(error)
     return res.status(500).json(error)

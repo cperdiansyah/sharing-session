@@ -1,5 +1,6 @@
 import React from 'react'
 import { MyForm, MyFormRegis } from './formWithCustomHooks'
+// import { MyForm, MyFormRegis } from './formWithoutCustomHooks'
 
 const CustomHooks = () => {
   return (

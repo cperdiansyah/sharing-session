@@ -4,7 +4,7 @@ type FormValues = {
   [key: string]: string
 }
 
-const MyForm: React.FC = () => {
+export const MyForm: React.FC = () => {
   const initialValues: FormValues = {
     name: '',
     email: '',
@@ -52,7 +52,7 @@ const MyForm: React.FC = () => {
     </form>
   )
 }
-const MyFormRegis: React.FC = () => {
+export const MyFormRegis: React.FC = () => {
   const initialValues: FormValues = {
     name: '',
     email: '',
@@ -111,4 +111,3 @@ const MyFormRegis: React.FC = () => {
   )
 }
 
-export default MyForm

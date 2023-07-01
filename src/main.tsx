@@ -6,6 +6,7 @@ import CustomHooks from './pages/CustomHooks'
 import Layout from './pages/components/Layout'
 import './assets/tailwind.css'
 import CleanupuseEffect from './pages/CleanupuseEffect'
+// import 'dotenv/config'
 
 const router = createBrowserRouter([
   {

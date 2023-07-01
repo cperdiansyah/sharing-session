@@ -1,9 +1,6 @@
-import React from 'react'
-
 const CleanupuseEffect = () => {
-  return (
-    <div>CleanupuseEffect</div>
-  )
+  // console.log(VITE_MOVIE_API)
+  return <div>CleanupuseEffect</div>
 }
 
 export default CleanupuseEffect

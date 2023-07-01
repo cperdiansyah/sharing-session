@@ -2,11 +2,11 @@ import { AxiosError, GenericAbortSignal } from 'axios'
 import { useEffect, useState } from 'react'
 import { SERVICE, api } from 'src/utils/api'
 
-const UseEffectWithCleanup = () => {
+const UseEffectWithoutCleanup = () => {
   const [data, setData] = useState<unknown>()
   const [loading, setLoading] = useState(false)
 
-  const getData = async (signal: GenericAbortSignal) => {
+  const getData = async (signal?: GenericAbortSignal) => {
     setLoading(true)
     try {
       const resData = await api.get(`${SERVICE.movie}/popular`, {
@@ -26,18 +26,13 @@ const UseEffectWithCleanup = () => {
   }
 
   useEffect(() => {
-    const controller = new AbortController()
     console.log('callback')
-    getData(controller.signal)
-    return () => {
-      console.log('cleanup')
-      controller.abort()
-    }
+    getData()
   }, [])
   return (
     <div className="div">
       <button className="border border-white px-3 py-2">
-        UseEffectWithCleanup
+        UseEffectWithoutCleanup
       </button>
       <div className="resultData mt-4">
         <h4>Result</h4>
@@ -47,4 +42,4 @@ const UseEffectWithCleanup = () => {
   )
 }
 
-export default UseEffectWithCleanup
+export default UseEffectWithoutCleanup

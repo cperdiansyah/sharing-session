@@ -1,0 +1,5 @@
+NODE_ENV = 'development'
+PORT = 5000
+MOVIE_API = ""
+MOVIE_API_TOKEN  = ""
+BASE_URL="https://api.themoviedb.org"

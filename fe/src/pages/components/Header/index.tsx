@@ -6,6 +6,7 @@ export const Header = () => {
       <NavLink to="/">Home</NavLink>
       <NavLink to="/custom-hooks">Custom Hooks</NavLink>
       <NavLink to="/cleanup-useEffect">Clean Up UseEffect</NavLink>
+      <NavLink to="/hooks-hell">React Hooks Hell</NavLink>
     </div>
   )
 }

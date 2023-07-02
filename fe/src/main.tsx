@@ -1,12 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import App from './pages/Home/App'
+
+/* Custom hooks */
 import CustomHooks from './pages/CustomHooks'
+
+/* Component */
+import App from './pages/Home/App'
 import Layout from './pages/components/Layout'
-import './assets/tailwind.css'
 import CleanupuseEffect from './pages/CleanupuseEffect'
-// import 'dotenv/config'
+import HooksAlternative from './pages/HooksAlternative'
+
+/*  style */
+import './assets/tailwind.css'
 
 const router = createBrowserRouter([
   {
@@ -23,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: '/cleanup-useEffect',
         element: <CleanupuseEffect />,
+      },
+      {
+        path: '/hooks-hell',
+        element: <HooksAlternative />,
       },
     ],
   },

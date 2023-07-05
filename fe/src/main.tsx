@@ -9,7 +9,7 @@ import CustomHooks from './pages/CustomHooks'
 import App from './pages/Home/App'
 import Layout from './pages/components/Layout'
 import CleanupuseEffect from './pages/CleanupuseEffect'
-import HooksAlternative from './pages/HooksAlternative'
+import HooksAlternative from './pages/ReactHooksHell'
 
 /*  style */
 import './assets/tailwind.css'

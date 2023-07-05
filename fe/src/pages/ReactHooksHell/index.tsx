@@ -5,8 +5,8 @@ import UseReducerComponent from './useReducerComponent'
 const HooksAlternative = () => {
   return (
     <>
-      {/* <UseStateComponent /> */}
-      <UseReducerComponent />
+      <UseStateComponent />
+      {/* <UseReducerComponent /> */}
     </>
   )
 }
